@@ -1,0 +1,35 @@
+/* ####################### */
+/* ##### GENERAL CSS ##### */
+
+.d_flex {
+    display: flex;
+}
+.justify_center {
+    justify-content: center;
+}
+.align_center {
+    align-items: center;
+}
+.f_col {
+    flex-direction: column;
+}
+.f_around {
+    justify-content: space-around;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* #################### */
+/* ##### MAIN CSS ##### */
+#ingredients > div > div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+#ingredients > div > div > * {
+    margin: 0px 10px;
+}

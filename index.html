@@ -12,60 +12,69 @@
 <body>
     <!-- ##### HEADER ##### -->
     <header>
-        <h1>Create your burger!</h1>
+        <div class="container">
+            <h1>Create Your Burger</h1>
+            <img src="./assets/img/burger-top.png" alt="Hamburger Vettoriale">
+        </div>
     </header>
 
     <!-- ##### MAIN ##### -->
     <main>
-        <input type="text" name="burger_name" id="burger_name" placeholder="Name your burger" value="">
-        <h3>Ingredients</h3>
-        <div id="ingredients" class="d_flex">
-            <div>
-                <div class="cheese">
-                    <img class="icon" src="./assets/img/cheese.svg" alt="Icona Formaggio">
-                    <label for="cheese">Cheese</label>
-                    <input type="checkbox" name="cheese" id="cheese">
+        <div class="container">
+            <input type="text" name="burger_name" id="burger_name" placeholder="Name your burger" value="">
+            <h3>Ingredients</h3>
+            <div id="ingredients" class="d_flex">
+                <div>
+                    <div class="cheese">
+                        <img class="icon" src="./assets/img/cheese.svg" alt="Icona Formaggio">
+                        <label for="cheese">Cheese</label>
+                        <input type="checkbox" name="cheese" id="cheese">
+                    </div>
+                    <div class="egg">
+                        <img class="icon" src="./assets/img/egg.svg" alt="Icona Uova">
+                        <label for="egg">Egg</label>
+                        <input type="checkbox" name="egg" id="egg">
+                    </div>
+                    <div class="mustard">
+                        <img class="icon" src="./assets/img/mustard.svg" alt="Icona Mostarda">
+                        <label for="mustard">Mustard</label>
+                        <input type="checkbox" name="mustard" id="mustard">
+                    </div>
                 </div>
-                <div class="egg">
-                    <img class="icon" src="./assets/img/egg.svg" alt="Icona Uova">
-                    <label for="egg">Egg</label>
-                    <input type="checkbox" name="egg" id="egg">
-                </div>
-                <div class="mustard">
-                    <img class="icon" src="./assets/img/mustard.svg" alt="Icona Mostarda">
-                    <label for="mustard">Mustard</label>
-                    <input type="checkbox" name="mustard" id="mustard">
+                <div>
+                    <div class="tomato">
+                        <img class="icon" src="./assets/img/tomato.svg" alt="Icona Pomodoro">
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" name="tomato" id="tomato">
+                    </div>
+                    <div class="lettuce">
+                        <img class="icon" src="./assets/img/lettuce.svg" alt="Icona Insalata">
+                        <label for="lettuce">Lettuce</label>
+                        <input type="checkbox" name="lettuce" id="lettuce">
+                    </div>
+                    <div class="ketchup">
+                        <img class="icon" src="./assets/img/ketchup.svg" alt="Icona Ketchup">
+                        <label for="ketchup">Ketchup</label>
+                        <input type="checkbox" name="ketchup" id="ketchup">
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="tomato">
-                    <img class="icon" src="./assets/img/tomato.svg" alt="Icona Pomodoro">
-                    <label for="tomato">Tomato</label>
-                    <input type="checkbox" name="tomato" id="tomato">
-                </div>
-                <div class="lettuce">
-                    <img class="icon" src="./assets/img/lettuce.svg" alt="Icona Insalata">
-                    <label for="lettuce">Lettuce</label>
-                    <input type="checkbox" name="lettuce" id="lettuce">
-                </div>
-                <div class="ketchup">
-                    <img class="icon" src="./assets/img/ketchup.svg" alt="Icona Ketchup">
-                    <label for="ketchup">Ketchup</label>
-                    <input type="checkbox" name="ketchup" id="ketchup">
-                </div>
+            <div class="discount d_flex align_center">
+                <h3>Discount Coupon</h3>
+                <input type="text" name="coupon" id="coupon" placeholder="Insert your coupon... (SCONTO30)">
+            </div>
+            <div class="button_div d_flex justify_center">
+                <button class="bttn" onclick="yourBurger()">calculate</button>
             </div>
         </div>
-        <div class="discount">
-            <h3>Discount Coupon</h3>
-            <input type="text" name="coupon" id="coupon" placeholder="Insert your coupon...">
-        </div>
-        <button onclick="yourBurger()">Conferma</button>
     </main>
 
     <!-- ##### FOOTER ##### -->
-    <footer class="d_flex">
-        <h2>Your Price</h2>
-        <h2>$ <span id="price">x</span></h2>
+    <footer>
+        <div class="container d_flex f_between align_center">
+            <h2>Your Price</h2>
+            <h2>$ <span id="price">0.00</span></h2>
+        </div>
     </footer>
 
     <script src="./assets/js/main.js"></script>

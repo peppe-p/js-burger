@@ -1,5 +1,14 @@
 /* ####################### */
 /* ##### GENERAL CSS ##### */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff5e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .d_flex {
     display: flex;
@@ -16,10 +25,49 @@
 .f_around {
     justify-content: space-around;
 }
+.f_between {
+    justify-content: space-between;
+}
 
 .icon {
     height: 50px;
     width: 50px;
+}
+
+input[type="text"] {
+    border: none;
+}
+input[type="text"]:focus-visible {
+    outline: none;
+
+}
+
+
+
+
+/* ####################### */
+/* ##### HEADRER CSS ##### */
+header {
+    width: 50vw;
+    background-color: #fdbb40;
+    height: 150px;
+}
+header .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header img {
+    position: relative;
+    left: 75%;
+    bottom: 45%;
+}
+header h1 {
+    position: relative;
+    left: 50px;
+    top: 45%;
+    font-size: 38px;
+    font-weight: bold;
 }
 
 
@@ -32,4 +80,63 @@
 }
 #ingredients > div > div > * {
     margin: 0px 10px;
+}
+main {
+    width: 50vw;
+    background-color: white;
+    height: calc(100vh - 250px);
+}
+main > .container {
+    padding: 50px;
+}
+
+.bttn {
+    border: none;
+    border-radius: 5px;
+    background-color: #fdbb40;
+    font-weight: 900;
+    font-size: 14px;
+    color: black;
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+}
+.bttn:hover {
+    background-color: #ffc964
+}
+
+#burger_name {
+    height: 80px;
+    font-size: 18px;
+}
+
+.discount {
+    margin: 25px 0px;
+}
+.discount h3 {
+    font-weight: 100;
+}
+
+#coupon {
+    background-color: #fff5e2;
+    height: 30px;
+    width: 65%;
+    border-radius: 6px;
+    margin-left: 20px;
+    padding: 2px 10px;
+}
+
+
+/* ###################### */
+/* ##### FOOTER CSS ##### */
+footer {
+    width: 50vw;
+    background-color: #d33359;
+    height: 100px;
+    color: white;
+}
+
+footer .container {
+    height: 100%;
+    padding: 0px 50px;
 }

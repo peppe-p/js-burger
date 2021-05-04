@@ -29,13 +29,15 @@ function yourBurger() {
         }
     }
 
-
+    //Calcolo coupon e stampa del prezzo finale
     var coupon_list = ["SCONTO30"];
     var coupon_input = document.querySelector("input[name='coupon']").value;
+    var html_price = document.getElementById("price");
     if (coupon_list.includes(coupon_input)) {
+        //Calcolo sconto del 30%
         var prezzo_finale = base_price - ((base_price * 30) / 100);
-        console.log(prezzo_finale.toFixed(2));
+        html_price.innerHTML = prezzo_finale.toFixed(2);
     } else {
-        console.log(base_price.toFixed(2));
+        html_price.innerHTML = base_price.toFixed(2);
     }
 }
